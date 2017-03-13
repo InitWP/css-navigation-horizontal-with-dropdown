@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+	.mainNavigation {
+		position: static;
+	}
+
+	.mainNavigation--toggle {
+		display: none;
+	}
+
+	.mainNavigation--menu {
+		box-shadow: none;
+		display: block;
+		position: static;
+	}
+
+	.mainNavigation--menuItem {
+		border: 0;
+		float: left;
+	}
+
+	.mainNavigation--menuItem > a {
+		float: left;
+
+	}
+	.mainNavigation--menuItem > a:hover,
+	.mainNavigation--menuItem.is-active > a {
+
+	}
+
+	.mainNavigation--subMenuToggle {
+		float: right;
+		position: static;
+	}
+
+	.mainNavigation--subMenuToggle:focus {
+		background: none;
+		outline: none;
+	}
+
+	.mainNavigation--subMenu .mainNavigation--subMenuToggle {
+		display: none;
+	}
+
+	.mainNavigation--menuItem:hover > .mainNavigation--subMenu,
+	.mainNavigation--menuItem > .mainNavigation--subMenu.is-active {
+		background: #fff;
+		display: block;
+		min-width: 200px;
+		position: absolute;
+		top: 47px;
+		z-index: 100;
+	}
+
+	.mainNavigation--menuItem:hover ul .mainNavigation--subMenu {
+		display: block;
+		position: static;
+	}
+
+	.mainNavigation--menuItem:last-child .mainNavigation--subMenu {
+		right: 0;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
