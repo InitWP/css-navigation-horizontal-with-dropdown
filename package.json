@@ -4,7 +4,7 @@
 	"version": "0.1.0",
 	"description": "CSS for a horizontal menu with dropdown submenu",
 	"files": [
-		"navigation-horizontal-and-dropdown.css"
+		"navigation-horizontal-with-dropdown.css"
     ],
 	"actions": {
 		"insertAfter": {
