@@ -1,10 +1,11 @@
 @media screen and (min-width: 768px) {
-	.mainNavigation {
-		position: static;
-	}
 
 	.mainNavigation--toggle {
 		display: none;
+	}
+
+	.mainNavigation {
+		position: static;
 	}
 
 	.mainNavigation--menu {
@@ -18,45 +19,53 @@
 		float: left;
 	}
 
-	.mainNavigation--menuItem > a {
+	/* Mainmenu links */
+	.mainNavigation--menuItem a {
+		color: #6f6f6e;
 		float: left;
-
+		line-height: 50px;
+		font-size: 0.9em;
+		font-weight: bold;
+		padding: 0 15px;
+		text-decoration: none;
+		text-transform: uppercase;
 	}
-	.mainNavigation--menuItem > a:hover,
-	.mainNavigation--menuItem.is-active > a {
 
+	.mainNavigation--menuItem a:hover,
+	.mainNavigation--menu .is-active > a,
+	.mainNavigation--menu .is-active-ancestor > a {
+		color: turquoise;
 	}
 
 	.mainNavigation--subMenuToggle {
-		float: right;
-		position: static;
-	}
-
-	.mainNavigation--subMenuToggle:focus {
-		background: none;
-		outline: none;
-	}
-
-	.mainNavigation--subMenu .mainNavigation--subMenuToggle {
 		display: none;
 	}
 
-	.mainNavigation--menuItem:hover > .mainNavigation--subMenu,
-	.mainNavigation--menuItem > .mainNavigation--subMenu.is-active {
+	/* dropdown submenu */
+	.mainNavigation--menuItem:hover > .mainNavigation--subMenu {
 		background: #fff;
+		top: 100%;
 		display: block;
 		min-width: 200px;
 		position: absolute;
-		top: 47px;
 		z-index: 100;
 	}
 
-	.mainNavigation--menuItem:hover ul .mainNavigation--subMenu {
-		display: block;
-		position: static;
+	/* Submenu links */
+	.mainNavigation--subMenu a {
+		float: none;
+		font-weight: normal;
+		line-height: 25px;
+		text-transform: lowercase;
 	}
 
-	.mainNavigation--menuItem:last-child .mainNavigation--subMenu {
+	/* make all sub-sub menu-items visible */
+	.mainNavigation--subMenu .mainNavigation--subMenu {
+		display: block;
+	}
+
+	/* dropdown submenu of last item should be right aligned so it doesn't fall of the screen */
+	.mainNavigation--menuItem:last-child > .mainNavigation--subMenu {
 		right: 0;
 	}
 
