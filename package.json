@@ -1,14 +1,14 @@
 {
 	"name": "CSS: Horizontal navigation with dropdown submenu",
-	"type": "snippet",
+	"type": "module",
 	"version": "0.1.0",
 	"description": "CSS for a horizontal menu with dropdown submenu",
-	"files": [
-		"navigation-horizontal-with-dropdown.css"
-    ],
 	"actions": {
 		"insertAfter": {
 			"searchValue": "* Media Queries */",
+			"newValue": {
+				"file": "navigation-horizontal-with-dropdown.css"
+			},
 			"files": [
 				"css/modules/navigation.css"
 			]
